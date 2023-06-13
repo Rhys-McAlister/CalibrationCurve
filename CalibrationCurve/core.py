@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['CalibrationModel']
 
-# %% ../nbs/00_core.ipynb 6
+# %% ../nbs/00_core.ipynb 5
 class CalibrationModel:
 
 # TODO: think about adding replicates and no. of calibration points here or read it automatically from data
@@ -96,25 +96,3 @@ class CalibrationModel:
         print(f"Uncertainity = {self.calculate_uncertainty()}")
         # print(f"Prediction = {self.inverse_prediction()}")
     
-
-# %% ../nbs/00_core.ipynb 9
-# def plot_calibration_curves(models, unknown):
-#     fig, ax = plt.subplots(2, 2, figsize=(10, 10))
-
-#     for i, model in enumerate(models):
-#         row = i // 2
-#         col = i % 2
-
-#         sns.regplot(x="concentration", y=f"{model.response_variable}", data=model.raw_data, ax=ax[row, col])
-#         ax[row, col].annotate(f"Predicted value = {model.inverse_prediction(unknown):.2f}", xy=(0.5, 0.9), xycoords='axes fraction', fontsize=9, ha='center', va='center')
-#         ax[row, col].axvline(x=model.inverse_prediction(unknown), color='red', linestyle='--')
-#         ax[row, col].axvline(x=model.inverse_prediction(unknown) + model.calculate_uncertainty(), color='blue', linestyle='--')
-#         ax[row, col].axvline(x=model.inverse_prediction(unknown) - model.calculate_uncertainty(), color='blue', linestyle='--')
-#         ax[row, col].set_title('Calibration Curve')
-#         ax[row, col].set_xlabel('Concentration (v/v%)')
-#         ax[row, col].set_ylabel('Peak Value')
-#         ax[row, col].annotate(f"R-squared = {model.get_r2():.3f}", xy=(0.5, 0.8), xycoords='axes fraction', fontsize=9, ha='center', va='center')
-#         ax[row, col].annotate(f"Regression formula: y = {model.get_params()[0]:.3f} * x + {model.get_params()[1]:.3f}", xy=(0.5, 0.7), xycoords='axes fraction', fontsize=9, ha='center', va='center')
-
-#     plt.tight_layout()
-#     plt.show()
