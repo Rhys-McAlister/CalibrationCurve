@@ -32,7 +32,5 @@ d = { 'settings': { 'branch': 'main',
                                                                                              'CalibrationCurve/core.py'),
                                        'CalibrationCurve.core.CalibrationModel.plot_fit': ( 'core.html#calibrationmodel.plot_fit',
                                                                                             'CalibrationCurve/core.py'),
-                                       'CalibrationCurve.core.CalibrationModel.summary': ( 'core.html#calibrationmodel.summary',
-                                                                                           'CalibrationCurve/core.py'),
                                        'CalibrationCurve.core.CalibrationModel.tabulate_results': ( 'core.html#calibrationmodel.tabulate_results',
                                                                                                     'CalibrationCurve/core.py')}}}
