@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "CalibrationCurve"
+  site-url: "https://Rhys-McAlister.github.io/CalibrationCurve"
+  description: "A collection of functions that streamline the process of creating calibration curves using Python."
+  repo-branch: main
+  repo-url: "https://github.com/Rhys-McAlister/CalibrationCurve"
