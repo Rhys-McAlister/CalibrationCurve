@@ -23,8 +23,7 @@ class CalibrationModel:
     def fit_ols(self):
         X = self.raw_data[["concentration"]]
         y = self.raw_data[self.response_variable]
-        lr = LinearRegression
-        self.fit = lr().fit(X, y)
+        self.fit = LinearRegression().fit(X, y)
         self.r2 = self.fit.score(X, y)
         return self.fit
 
